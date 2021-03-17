@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class EmailController extends Controller
 {
     function validationEmail(Request $request)
     {

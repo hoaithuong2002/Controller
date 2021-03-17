@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\EmailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,5 +20,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-Route::post('/check-email', [UserController::class,'validationEmail'])->name('checkEmail');
+Route::post('/check-email', [EmailController::class,'validationEmail'])->name('checkEmail');
 
